@@ -1,0 +1,23 @@
+$lk-bp-type: 'aspect-ratio' !default;
+
+/* set the minimum value of the breakpoint type
+   and the number of columns associated to it: */
+$lk-bps: (
+  '0' 32,
+  '0' 32
+) !default;
+
+$screen-xl-min: 1850px;
+$screen-med-min: 1850px;
+
+@mixin xl {
+   @media (min-width: #{$screen-xl-min}) {
+       @content;
+   }
+}
+
+@mixin med {
+   @media (min-width: #{$screen-med-min}) {
+       @content;
+   }
+}

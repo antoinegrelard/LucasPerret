@@ -1,0 +1,25 @@
+
+@font-face {
+  font-family: 'Canela Medium';
+  src: url('./Canela-Medium.otf') format('OpenType')
+}
+
+@font-face {
+  font-family: 'Canela';
+  src: url('./Canela-Regular.otf') format('OpenType')
+}
+
+@font-face {
+  font-family: 'SF';
+  src: url('./SF-Pro-Display-Regular.otf') format('OpenType')
+}
+
+@font-face {
+  font-family: 'SF Light';
+  src: url('./SF-Pro-Display-Light.otf') format('OpenType')
+}
+
+@font-face {
+  font-family: 'SF Semi';
+  src: url('./SF-Pro-Display-Semibold.otf') format('OpenType')
+}

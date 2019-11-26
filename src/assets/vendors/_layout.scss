@@ -1,0 +1,42 @@
+
+/*
+Media queries helpers */
+@mixin bp($i) {
+  $bp: nth(nth($lk-bps, $i), 1);
+  @if ($i == 1) {
+    @content;
+  } @else {
+    @media (min-#{$lk-bp-type}: #{$bp}) {
+      @content;
+    }
+  }
+}
+
+@mixin medium {
+  @include bp(2) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: #{$screen-xl-min}) {
+    @include bp(3) {
+      @content;
+    }
+  }
+}
+
+/*
+Grid mixins */
+
+@mixin likid($prop, $n, $plus: 0px) {
+  @each $bp, $cols in $lk-bps {
+    @if ($bp == nth(nth($lk-bps, 1), 1)) {
+      #{$prop}: calc(100vw * #{$n} / #{$cols} + #{$plus});
+    } @else {
+      @media (min-#{$lk-bp-type}: #{$bp}) {
+        #{$prop}: calc(100vw * #{$n} / #{$cols} + #{$plus});
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+[class^=likid] {
+  margin: 0;
+  position: absolute;
+  
+  .line {
+    display: block;
+    &.right { text-align: right; }
+    &.center { text-align: center; }
+  }
+}
+
+

@@ -29,5 +29,8 @@
     "gh-pages": "^2.1.1",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.23.3"
+  },
+  "dependencies": {
+    "gsap": "^3.0.1"
   }
 }
