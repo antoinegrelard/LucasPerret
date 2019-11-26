@@ -1,0 +1,176 @@
+/* set the minimum value of the breakpoint type
+   and the number of columns associated to it: */
+/*
+Media queries helpers */
+/*
+Grid mixins */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+[class^=likid] {
+  margin: 0;
+  position: absolute;
+}
+[class^=likid] .line {
+  display: block;
+}
+[class^=likid] .line.right {
+  text-align: right;
+}
+[class^=likid] .line.center {
+  text-align: center;
+}
+
+:root {
+  --c-bg: #FFFFFF;
+  --c-fg: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "SF", Helvetica, sans-serif;
+  background-size: cover;
+  font-size: calc(100vw * 0.4 / 32 + 0px);
+  font-size: calc(100vw * 0.4 / 32 + 0px);
+  line-height: calc(100vw * 0.4 / 32 + 0px);
+  line-height: calc(100vw * 0.4 / 32 + 0px);
+}
+body a,
+body button.is-a {
+  text-decoration: none;
+  color: currentColor;
+  background: none;
+  border: none;
+  padding: 0;
+}
+body a:after,
+body button.is-a:after {
+  content: "";
+  display: block;
+  margin-top: 3px;
+  height: 1px;
+  width: 100%;
+  opacity: 0;
+  background-color: currentColor;
+  transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+body a:hover::after,
+body button.is-a:hover::after {
+  opacity: 1;
+}
+body a:focus,
+body button.is-a:focus {
+  outline: none;
+}
+body a:hover,
+body button.is-a:hover {
+  cursor: pointer;
+}
+body ::-webkit-scrollbar {
+  display: none;
+}
+body ::selection {
+  color: red;
+}
+body .line {
+  overflow: hidden;
+}
+body .intro-wrapper {
+  transform-origin: top;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+body header .logo {
+  font-family: Canela;
+  left: calc(100vw * 2 / 32 + 0px);
+  left: calc(100vw * 2 / 32 + 0px);
+  top: calc(100vw * 1 / 32 + 0px);
+  top: calc(100vw * 1 / 32 + 0px);
+  font-size: calc(100vw * 0.5 / 32 + 0px);
+  font-size: calc(100vw * 0.5 / 32 + 0px);
+  line-height: calc(100vw * 0.5 / 32 + 0px);
+  line-height: calc(100vw * 0.5 / 32 + 0px);
+}
+body header nav {
+  right: calc(100vw * 2 / 32 + 0px);
+  right: calc(100vw * 2 / 32 + 0px);
+  top: calc(100vw * 1 / 32 + 0px);
+  top: calc(100vw * 1 / 32 + 0px);
+}
+body header nav a {
+  font-family: SF Semi;
+  display: inline-block;
+  margin-left: 2em;
+}
+body .main .m-title {
+  left: calc(100vw * 4 / 32 + 0px);
+  left: calc(100vw * 4 / 32 + 0px);
+  top: 30vh;
+  text-transform: uppercase;
+  font-family: Canela Medium;
+  font-size: calc(100vw * 2.5 / 32 + 0px);
+  font-size: calc(100vw * 2.5 / 32 + 0px);
+  line-height: calc(100vw * 2.5 / 32 + 0px);
+  line-height: calc(100vw * 2.5 / 32 + 0px);
+}
+body .main .m-title span {
+  display: block;
+}
+body .main .m-spe {
+  position: relative;
+  left: calc(100vw * 7 / 32 + 0px);
+  left: calc(100vw * 7 / 32 + 0px);
+  top: 70vh;
+  font-family: SF Light;
+}
+body .main .m-spe span {
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+  display: block;
+}
+body .main .m-spe-line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  left: 0;
+  transform-origin: bottom;
+}
+body .main .p-number {
+  font-family: SF Light;
+  right: calc(100vw * 2 / 32 + 0px);
+  right: calc(100vw * 2 / 32 + 0px);
+  top: 33.33vh;
+}
+body .main .p-number .project {
+  display: inline-block;
+  margin-left: calc(100vw * 2 / 32 + 0px);
+  margin-left: calc(100vw * 2 / 32 + 0px);
+  opacity: 0.2;
+  transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+body .main .p-number .project:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=/style.6d80b553.css.map */
