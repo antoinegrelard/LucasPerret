@@ -1,15 +1,29 @@
-# Front-end Boilerplate
+# PORTFOLIO LUCAS PERRET
 
-## Usage
+## Contributing:
 
-Click [here](https://github.com/m0wh/frontend-boilerplate/generate) or on the green "Une this template" button on top to create a new repository with the same file structure. Then just clone it, replace what needs to be replaced in `package.json` (name, repository url...) and you are ready!
+> Requires [Node.js](https://nodejs.org), [Git](https://git-scm.com) and a nice terminal  
+[Yarn](https://yarnpkg.com) is recomended.
 
-> **Tip:** you can add [github.com/m0wh/frontend-boilerplate/generate](https://github.com/m0wh/frontend-boilerplate/generate) to your bookmarks to create a repo in one click.
+```bash
+git clone https://github.com/AndrewIH/PORTFOLIO_V2.git
+cd PORTFOLIO_V2
+yarn # or npm install
+yarn start # or npm start: launches dev server and opens browser. Ctrl+C to stop
+```
 
-## Commands
+When a feature is done:
 
-```sh
-yarn start # run dev server
-yarn deploy # builds and deploys your site to gh-pages branch
-yarn build # builds your site
+```bash
+git add .
+git commit -m "description of the feature"
+git push
+yarn deploy # or npm run deploy: pushes the builded website to gh-pages branch
+```
+
+When new features are online (from another dev):
+
+```bash
+git pull
+yarn # or npm install
 ```
