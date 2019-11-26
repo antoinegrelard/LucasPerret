@@ -6300,15 +6300,13 @@ var indexLaunch = function indexLaunch() {
     duration: 2,
     scaleY: 0,
     ease: "power4.inOut"
-  }).fromTo('.line', {
-    y: "60%",
-    autoAlpha: 0
+  }).fromTo('.line div', {
+    y: "100%"
   }, {
-    autoAlpha: 1,
     y: "0%",
     duration: 2,
     ease: "power4.out",
-    stagger: 0.2
+    stagger: 0.04
   }, "-=1.2").fromTo('.m-spe-line', {
     scaleY: 0,
     autoAlpha: 0
@@ -6356,6 +6354,42 @@ var indexLaunch = function indexLaunch() {
 };
 
 indexLaunch();
+
+var Cursor = function Cursor() {
+  _gsap.default.set(".ball", {
+    xPercent: -50,
+    yPercent: -50
+  });
+
+  var ball = document.querySelector(".ball");
+  var pos = {
+    x: window.innerWidth / 2,
+    y: window.innerHeight / 2
+  };
+  var mouse = {
+    x: pos.x,
+    y: pos.y
+  };
+  var speed = 0.25;
+
+  var xSet = _gsap.default.quickSetter(ball, "x", "px");
+
+  var ySet = _gsap.default.quickSetter(ball, "y", "px");
+
+  window.addEventListener("mousemove", function (e) {
+    mouse.x = e.x;
+    mouse.y = e.y;
+  });
+
+  _gsap.default.ticker.add(function () {
+    pos.x += (mouse.x - pos.x) * speed;
+    pos.y += (mouse.y - pos.y) * speed;
+    xSet(pos.x);
+    ySet(pos.y);
+  });
+};
+
+Cursor();
 },{"gsap":"node_modules/gsap/index.js","./js/SplitText":"src/js/SplitText.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -6384,7 +6418,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56200" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51044" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

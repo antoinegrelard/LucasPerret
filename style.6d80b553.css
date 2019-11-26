@@ -98,6 +98,16 @@ body .intro-wrapper {
   left: 0;
   z-index: 100;
 }
+body .ball {
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  border-radius: 50%;
+}
 body header .logo {
   font-family: Canela;
   left: calc(100vw * 2 / 32 + 0px);
